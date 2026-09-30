@@ -8,6 +8,9 @@ export function postFor(highlight) {
   if (highlight.kind === "wicket" && highlight.clip) {
     return { post: true, text: "WICKET" };
   }
+  if (highlight.kind === "appeal") {
+    return { post: true, text: "WICKET" };
+  }
   if (highlight.kind === "boundary" && highlight.clip) {
     return { post: true, text: "BOUNDARY" };
   }

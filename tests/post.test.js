@@ -10,10 +10,10 @@ test("wicket clip becomes a WICKET post", () => {
   });
 });
 
-test("appeal is not posted as a wicket", () => {
+test("appeal is posted as a wicket for the live timeline", () => {
   assert.deepEqual(postFor({ clip: false, kind: "appeal" }), {
-    post: false,
-    text: "",
+    post: true,
+    text: "WICKET",
   });
 });
 
